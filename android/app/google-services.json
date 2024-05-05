@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "990394412416",
+    "project_id": "epics-bd043",
+    "storage_bucket": "epics-bd043.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990394412416:android:c3769987c6f7a058f66565",
+        "android_client_info": {
+          "package_name": "com.example.epic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0oqAImbxOTQJAwNrIyC6CAv7VeAB02iA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
