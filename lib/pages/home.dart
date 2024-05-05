@@ -25,7 +25,10 @@ class _HomeState extends State<Home> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Hello Shivam,", style: AppWidget.boldTextFieldStyle()),
+                  Text(
+                    "Hello Shashwat,",
+                    style: AppWidget.boldTextFieldStyle(),
+                  ),
                   Container(
                     margin: const EdgeInsets.only(right: 20.0),
                     padding: const EdgeInsets.all(3),
@@ -40,9 +43,7 @@ class _HomeState extends State<Home> {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 20.0,
-              ),
+              const SizedBox(height: 20.0),
               Text("Delicious Food", style: AppWidget.headlineTextFieldStyle()),
               Text(
                 "Discover and Get Great Food",

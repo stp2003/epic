@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:random_string/random_string.dart';
 
+import '../services/database.dart';
+import '../services/shared_pref.dart';
 import '../widgets/widget_support.dart';
 import 'bottomNav.dart';
 import 'login.dart';
@@ -47,11 +49,12 @@ class _SignUpState extends State<SignUp> {
         "Wallet": "0",
         "Id": id,
       };
-      // await DatabaseMethods().addUserDetail(addUserInfo, Id);
-      // await SharedPreferenceHelper().saveUserName(namecontroller.text);
-      // await SharedPreferenceHelper().saveUserEmail(mailcontroller.text);
-      // await SharedPreferenceHelper().saveUserWallet('0');
-      // await SharedPreferenceHelper().saveUserId(Id);
+
+      await DatabaseMethods().addUserDetail(addUserInfo, id);
+      await SharedPreferenceHelper().saveUserName(nameController.text);
+      await SharedPreferenceHelper().saveUserEmail(mailController.text);
+      await SharedPreferenceHelper().saveUserWallet('0');
+      await SharedPreferenceHelper().saveUserId(id);
 
       // ignore: use_build_context_synchronously
       Navigator.pushReplacement(
