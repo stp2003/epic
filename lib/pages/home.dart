@@ -45,12 +45,11 @@ class _HomeState extends State<Home> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const Details(
-                            image: 'images/food.jpg',
-                            name: 'Veggie Taco Hash',
-                            detail:
-                                'Veggie Taco HashVeggie Taco HashVeggie Taco HashVeggie Taco HashVeggie Taco HashVeggie Taco HashVeggie Taco HashVeggie Taco Hash',
-                            price: '25',
+                          builder: (context) => Details(
+                            image: ds['Image'],
+                            name: ds['Name'],
+                            detail: ds['Detail'],
+                            price: ds['Price'],
                           ),
                         ),
                       );
@@ -118,12 +117,11 @@ class _HomeState extends State<Home> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const Details(
-                            image: 'images/food.jpg',
-                            name: 'Veggie Taco Hash',
-                            detail:
-                                'Veggie Taco HashVeggie Taco HashVeggie Taco HashVeggie Taco HashVeggie Taco HashVeggie Taco HashVeggie Taco HashVeggie Taco Hash',
-                            price: '25',
+                          builder: (context) => Details(
+                            image: ds['Image'],
+                            name: ds['Name'],
+                            detail: ds['Detail'],
+                            price: ds['Price'],
                           ),
                         ),
                       );

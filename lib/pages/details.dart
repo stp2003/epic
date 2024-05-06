@@ -1,5 +1,7 @@
+import 'package:epic/services/database.dart';
 import 'package:flutter/material.dart';
 
+import '../services/shared_pref.dart';
 import '../widgets/widget_support.dart';
 
 class Details extends StatefulWidget {
@@ -21,20 +23,20 @@ class _DetailsState extends State<Details> {
   int a = 1, total = 0;
   String? id;
 
-  // getthesharedpref() async {
-  //   id = await SharedPreferenceHelper().getUserId();
-  //   setState(() {});
-  // }
-  //
-  // ontheload() async {
-  //   await getthesharedpref();
-  //   setState(() {});
-  // }
+  getTheSharedPref() async {
+    id = await SharedPreferenceHelper().getUserId();
+    setState(() {});
+  }
+
+  onTheLoad() async {
+    await getTheSharedPref();
+    setState(() {});
+  }
 
   @override
   void initState() {
     super.initState();
-    //ontheload();
+    onTheLoad();
     total = int.parse(widget.price);
   }
 
@@ -55,7 +57,7 @@ class _DetailsState extends State<Details> {
                 color: Colors.black,
               ),
             ),
-            Image.asset(
+            Image.network(
               widget.image,
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height / 2.5,
@@ -164,13 +166,14 @@ class _DetailsState extends State<Details> {
                   ),
                   GestureDetector(
                     onTap: () async {
-                      Map<String, dynamic> addFoodtoCart = {
+                      Map<String, dynamic> addFoodToCart = {
                         "Name": widget.name,
                         "Quantity": a.toString(),
                         "Total": total.toString(),
                         "Image": widget.image
                       };
-                      //await DatabaseMethods().addFoodToCart(addFoodtoCart, id!);
+                      await DatabaseMethods().addFoodToCart(addFoodToCart, id!);
+
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
                           backgroundColor: Colors.orangeAccent,
@@ -199,9 +202,7 @@ class _DetailsState extends State<Details> {
                               fontFamily: 'Poppins',
                             ),
                           ),
-                          const SizedBox(
-                            width: 30.0,
-                          ),
+                          const SizedBox(width: 30.0),
                           Container(
                             padding: const EdgeInsets.all(3),
                             decoration: BoxDecoration(
