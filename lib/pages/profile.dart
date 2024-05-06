@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:random_string/random_string.dart';
 
+import '../services/auth.dart';
 import '../services/shared_pref.dart';
 
 class Profile extends StatefulWidget {
@@ -285,7 +286,7 @@ class _ProfileState extends State<Profile> {
                 const SizedBox(height: 30.0),
                 GestureDetector(
                   onTap: () {
-                    //AuthMethods().deleteuser();
+                    AuthMethods().deleteUser();
                   },
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -330,7 +331,7 @@ class _ProfileState extends State<Profile> {
                 const SizedBox(height: 30.0),
                 GestureDetector(
                   onTap: () {
-                    // AuthMethods().SignOut();
+                    AuthMethods().signOut();
                   },
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 20.0),
