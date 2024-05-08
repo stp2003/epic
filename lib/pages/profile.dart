@@ -1,7 +1,9 @@
 import 'dart:io';
 
 import 'package:epic/admin/admin_login.dart';
+import 'package:epic/pages/signup.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:random_string/random_string.dart';
@@ -355,22 +357,27 @@ class _ProfileState extends State<Profile> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
                           ),
-                          child: const Row(
+                          child:  Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.logout,
                                 color: Colors.black,
                               ),
-                              SizedBox(width: 20.0),
+                              const SizedBox(width: 20.0),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
-                                    "LogOut",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.w600,
+                                  GestureDetector(
+                                    onTap: (){
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => SignUp()));
+                                    },
+                                    child: const Text(
+                                      "LogOut",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.w600,
+                                      ),
                                     ),
                                   ),
                                 ],
