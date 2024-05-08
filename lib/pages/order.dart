@@ -140,7 +140,7 @@ class _OrderState extends State<Order> {
                 padding: const EdgeInsets.only(bottom: 10.0),
                 child: Center(
                   child: Text(
-                    "Food Cart",
+                    "Items Cart",
                     style: AppWidget.headlineTextFieldStyle(),
                   ),
                 ),

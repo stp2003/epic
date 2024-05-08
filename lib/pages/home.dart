@@ -13,7 +13,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  bool iceCream = false, pizza = false, salad = false, burger = false;
+  bool tools = false, seeds = false, salad = false, burger = false;
 
   Stream? foodItemStream;
 
@@ -79,7 +79,8 @@ class _HomeState extends State<Home> {
                               ),
                               const SizedBox(height: 5.0),
                               Text(
-                                "Fresh and Healthy",
+                                ds['Detail'],
+                                maxLines: 1,
                                 style: AppWidget.lightTextFieldStyle(),
                               ),
                               const SizedBox(height: 5.0),
@@ -161,7 +162,8 @@ class _HomeState extends State<Home> {
                                     width:
                                         MediaQuery.of(context).size.width / 2,
                                     child: Text(
-                                      "Honey goot cheese",
+                                      ds['Detail'],
+                                      maxLines: 1,
                                       style: AppWidget.lightTextFieldStyle(),
                                     ),
                                   ),
@@ -220,9 +222,9 @@ class _HomeState extends State<Home> {
                 ],
               ),
               const SizedBox(height: 20.0),
-              Text("Delicious Food", style: AppWidget.headlineTextFieldStyle()),
+              Text("Check Tools", style: AppWidget.headlineTextFieldStyle()),
               Text(
-                "Discover and Get Great Food",
+                "Discover and Get Tools that Defines You",
                 style: AppWidget.lightTextFieldStyle(),
               ),
               const SizedBox(height: 20.0),
@@ -231,7 +233,7 @@ class _HomeState extends State<Home> {
                 child: showItem(),
               ),
               const SizedBox(height: 30.0),
-              Container(height: 270, child: allItems()),
+              SizedBox(height: 270, child: allItems()),
               const SizedBox(height: 30.0),
               allItemsVertical(),
             ],
@@ -247,8 +249,8 @@ class _HomeState extends State<Home> {
       children: [
         GestureDetector(
           onTap: () async {
-            iceCream = true;
-            pizza = false;
+            tools = true;
+            seeds = false;
             salad = false;
             burger = false;
             foodItemStream = await DatabaseMethods().getFoodItem('Tools');
@@ -259,24 +261,24 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                color: iceCream ? Colors.black : Colors.white,
+                color: tools ? Colors.black : Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: const EdgeInsets.all(8),
               child: Image.asset(
-                "images/ice-cream.png",
+                "images/spade.png",
                 height: 40,
                 width: 40,
                 fit: BoxFit.cover,
-                color: iceCream ? Colors.white : Colors.black,
+                color: tools ? Colors.white : Colors.black,
               ),
             ),
           ),
         ),
         GestureDetector(
           onTap: () async {
-            iceCream = false;
-            pizza = true;
+            tools = false;
+            seeds = true;
             salad = false;
             burger = false;
             foodItemStream = await DatabaseMethods().getFoodItem('Seeds');
@@ -287,24 +289,24 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                color: pizza ? Colors.black : Colors.white,
+                color: seeds ? Colors.black : Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: const EdgeInsets.all(8),
               child: Image.asset(
-                "images/pizza.png",
+                "images/seed.png",
                 height: 40,
                 width: 40,
                 fit: BoxFit.cover,
-                color: pizza ? Colors.white : Colors.black,
+                color: seeds ? Colors.white : Colors.black,
               ),
             ),
           ),
         ),
         GestureDetector(
           onTap: () async {
-            iceCream = false;
-            pizza = false;
+            tools = false;
+            seeds = false;
             salad = true;
             burger = false;
             foodItemStream = await DatabaseMethods().getFoodItem('Pests');
@@ -320,7 +322,7 @@ class _HomeState extends State<Home> {
               ),
               padding: const EdgeInsets.all(8),
               child: Image.asset(
-                "images/salad.png",
+                "images/pests.png",
                 height: 40,
                 width: 40,
                 fit: BoxFit.cover,
@@ -331,8 +333,8 @@ class _HomeState extends State<Home> {
         ),
         GestureDetector(
           onTap: () async {
-            iceCream = false;
-            pizza = false;
+            tools = false;
+            seeds = false;
             salad = false;
             burger = true;
             foodItemStream = await DatabaseMethods().getFoodItem('Land');
@@ -343,12 +345,12 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                color: burger ? Colors.black : Colors.white,
+                color: burger ? Colors.lightGreen : Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: const EdgeInsets.all(8),
               child: Image.asset(
-                "images/burger.png",
+                "images/land.png",
                 height: 40,
                 width: 40,
                 fit: BoxFit.cover,

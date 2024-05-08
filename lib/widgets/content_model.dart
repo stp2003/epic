@@ -9,16 +9,18 @@ class UnboardingContent {
 
 List<UnboardingContent> contents = [
   UnboardingContent(
-      description: 'Pick your food from our menu\n          More than 35 times',
-      image: "images/screen1.png",
-      title: 'Select from Our\n       Best Menu'),
+    description: 'Empowering Farmers and Landowners to\nConnect Seamlessly',
+    image: "images/screen1.png",
+    title: 'Welcome to\nKheti Shayak',
+  ),
   UnboardingContent(
-      description:
-          'You can pay cash on delivery and\n     Card payment is available',
-      image: "images/screen2.png",
-      title: 'Easy and Online Payment'),
+    description: 'Access tools and crops whenever you need them.',
+    image: "images/screen2.png",
+    title: 'Start Renting Today',
+  ),
   UnboardingContent(
-      description: 'Deliver your food at your\n               Doorstep',
-      image: "images/screen3.png",
-      title: 'Quick Delivery at\n    Your Doorstep')
+    description: 'Explore our rental options for efficient farming.',
+    image: "images/screen3.png",
+    title: 'Enhance Your Farming Experience',
+  )
 ];

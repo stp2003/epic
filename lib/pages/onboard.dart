@@ -62,11 +62,13 @@ class _OnboardState extends State<Onboard> {
                       const SizedBox(height: 40.0),
                       Text(
                         contents[i].title,
+                        textAlign: TextAlign.center,
                         style: AppWidget.headlineTextFieldStyle(),
                       ),
                       const SizedBox(height: 20.0),
                       Text(
                         contents[i].description,
+                        textAlign: TextAlign.center,
                         style: AppWidget.lightTextFieldStyle(),
                       )
                     ],

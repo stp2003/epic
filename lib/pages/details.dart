@@ -57,13 +57,17 @@ class _DetailsState extends State<Details> {
                 color: Colors.black,
               ),
             ),
-            Image.network(
-              widget.image,
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height / 2.5,
-              fit: BoxFit.fill,
+            const SizedBox(height: 10.0),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(30.0),
+              child: Image.network(
+                widget.image,
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 2.5,
+                fit: BoxFit.fill,
+              ),
             ),
-            const SizedBox(height: 15.0),
+            const SizedBox(height: 20.0),
             Row(
               children: [
                 Column(
@@ -140,7 +144,7 @@ class _DetailsState extends State<Details> {
                 ),
                 const SizedBox(width: 5.0),
                 Text(
-                  "30 min",
+                  "24 hrs",
                   style: AppWidget.semiBoldTextFieldStyle(),
                 ),
               ],
@@ -178,7 +182,7 @@ class _DetailsState extends State<Details> {
                         const SnackBar(
                           backgroundColor: Colors.orangeAccent,
                           content: Text(
-                            "Food Added to Cart",
+                            "Items Added to Cart",
                             style: TextStyle(fontSize: 18.0),
                           ),
                         ),

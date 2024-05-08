@@ -48,16 +48,19 @@ class _HomeAdminState extends State<HomeAdmin> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(6.0),
-                          child: Image.asset(
-                            "images/food.jpg",
-                            height: 100,
-                            width: 100,
-                            fit: BoxFit.cover,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.asset(
+                              "images/farmer_admin.jpg",
+                              height: 100,
+                              width: 100,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                         const SizedBox(width: 30.0),
                         const Text(
-                          "Add Food Items",
+                          "Add Items",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20.0,

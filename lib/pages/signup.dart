@@ -130,11 +130,15 @@ class _SignUpState extends State<SignUp> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Center(
-                    child: Image.asset(
-                      "images/logo.png",
-                      width: MediaQuery.of(context).size.width / 1.5,
-                      fit: BoxFit.cover,
+                  const Center(
+                    child: Text(
+                      'Kheti Shayak',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 35.0,
+                        fontFamily: 'Poppins1',
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 50.0),
