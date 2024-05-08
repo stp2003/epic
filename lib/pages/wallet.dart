@@ -179,7 +179,7 @@ class _WalletState extends State<Wallet> {
                             style: AppWidget.semiBoldTextFieldStyle(),
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                   const SizedBox(height: 50.0),
@@ -207,7 +207,7 @@ class _WalletState extends State<Wallet> {
                         ),
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -325,9 +325,7 @@ class _WalletState extends State<Wallet> {
                       },
                       child: const Icon(Icons.cancel),
                     ),
-                    const SizedBox(
-                      width: 60.0,
-                    ),
+                    const SizedBox(width: 60.0),
                     const Center(
                       child: Text(
                         "Add Money",
