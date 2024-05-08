@@ -207,7 +207,7 @@ class _AdminLoginState extends State<AdminLogin> {
               const SnackBar(
                 backgroundColor: Colors.orangeAccent,
                 content: Text(
-                  "Your id is not correct",
+                  "Your id is logged in",
                   style: TextStyle(fontSize: 18.0),
                 ),
               ),

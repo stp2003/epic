@@ -97,7 +97,7 @@ class _OrderState extends State<Order> {
                               child: Image.network(
                                 ds["Image"],
                                 height: 90,
-                                width: 90,
+                                width: 75,
                                 fit: BoxFit.cover,
                               ),
                             ),

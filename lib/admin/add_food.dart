@@ -60,7 +60,7 @@ class _AddFoodState extends State<AddFood> {
             const SnackBar(
               backgroundColor: Colors.orangeAccent,
               content: Text(
-                "Tools has been added Successfully",
+                "Items has been added Successfully",
                 style: TextStyle(fontSize: 18.0),
               ),
             ),

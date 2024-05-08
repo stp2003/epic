@@ -45,33 +45,35 @@ class _OnboardState extends State<Onboard> {
                 );
               },
               itemBuilder: (_, i) {
-                return Padding(
-                  padding: const EdgeInsets.only(
-                    top: 40.0,
-                    left: 20.0,
-                    right: 20.0,
-                  ),
-                  child: Column(
-                    children: [
-                      Image.asset(
-                        contents[i].image,
-                        height: 450,
-                        width: MediaQuery.of(context).size.width,
-                        fit: BoxFit.fill,
-                      ),
-                      const SizedBox(height: 40.0),
-                      Text(
-                        contents[i].title,
-                        textAlign: TextAlign.center,
-                        style: AppWidget.headlineTextFieldStyle(),
-                      ),
-                      const SizedBox(height: 20.0),
-                      Text(
-                        contents[i].description,
-                        textAlign: TextAlign.center,
-                        style: AppWidget.lightTextFieldStyle(),
-                      )
-                    ],
+                return SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                      top: 40.0,
+                      left: 20.0,
+                      right: 20.0,
+                    ),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          contents[i].image,
+                          height: 400,
+                          width: MediaQuery.of(context).size.width,
+                          fit: BoxFit.fill,
+                        ),
+                        const SizedBox(height: 40.0),
+                        Text(
+                          contents[i].title,
+                          textAlign: TextAlign.center,
+                          style: AppWidget.headlineTextFieldStyle(),
+                        ),
+                        const SizedBox(height: 20.0),
+                        Text(
+                          contents[i].description,
+                          textAlign: TextAlign.center,
+                          style: AppWidget.lightTextFieldStyle(),
+                        )
+                      ],
+                    ),
                   ),
                 );
               },

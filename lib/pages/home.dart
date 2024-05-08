@@ -145,7 +145,7 @@ class _HomeState extends State<Home> {
                                 child: Image.network(
                                   ds['Image'],
                                   height: 120,
-                                  width: 120,
+                                  width: 110,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -209,7 +209,7 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Hello Shashwat,",
+                    "Hello Ankita" ,
                     style: AppWidget.boldTextFieldStyle(),
                   ),
                   Container(
