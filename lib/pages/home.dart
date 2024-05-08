@@ -61,6 +61,7 @@ class _HomeState extends State<Home> {
                         elevation: 5.0,
                         borderRadius: BorderRadius.circular(20),
                         child: Container(
+                          width: 200,
                           padding: const EdgeInsets.all(14),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -82,7 +83,8 @@ class _HomeState extends State<Home> {
                               Text(
                                 ds['Detail'],
                                 maxLines: 1,
-                                style: AppWidget.lightTextFieldStyle(),
+                                style: AppWidget.lightTextFieldStyle()
+                                    .copyWith(overflow: TextOverflow.ellipsis),
                               ),
                               const SizedBox(height: 5.0),
                               Text(
@@ -165,7 +167,9 @@ class _HomeState extends State<Home> {
                                     child: Text(
                                       ds['Detail'],
                                       maxLines: 1,
-                                      style: AppWidget.lightTextFieldStyle(),
+                                      style: AppWidget.lightTextFieldStyle()
+                                          .copyWith(
+                                              overflow: TextOverflow.ellipsis),
                                     ),
                                   ),
                                   const SizedBox(height: 5.0),
