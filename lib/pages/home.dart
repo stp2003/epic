@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:epic/pages/chatbot/chat_bot_feature.dart';
 import 'package:epic/services/database.dart';
 import 'package:epic/widgets/widget_support.dart';
 import 'package:flutter/material.dart';
@@ -214,9 +215,18 @@ class _HomeState extends State<Home> {
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: const Icon(
-                      Icons.shopping_cart_outlined,
-                      color: Colors.white,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const ChatBotFeature(),
+                          ),
+                        );
+                      },
+                      child: const Icon(
+                        Icons.messenger_outline,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ],
