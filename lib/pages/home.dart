@@ -86,7 +86,7 @@ class _HomeState extends State<Home> {
                               ),
                               const SizedBox(height: 5.0),
                               Text(
-                                "\$" + ds['Price'],
+                                "\₹" + ds['Price'],
                                 style: AppWidget.semiBoldTextFieldStyle(),
                               ),
                             ],
@@ -97,7 +97,7 @@ class _HomeState extends State<Home> {
                   );
                 },
               )
-            : const CircularProgressIndicator();
+            : const Center(child: CircularProgressIndicator());
       },
     );
   }
@@ -173,7 +173,7 @@ class _HomeState extends State<Home> {
                                     width:
                                         MediaQuery.of(context).size.width / 2,
                                     child: Text(
-                                      "\$" + ds['Price'],
+                                      "\₹" + ds['Price'],
                                       style: AppWidget.semiBoldTextFieldStyle(),
                                     ),
                                   ),
@@ -187,7 +187,7 @@ class _HomeState extends State<Home> {
                   );
                 },
               )
-            : const CircularProgressIndicator();
+            : const Center(child: CircularProgressIndicator());
       },
     );
   }
@@ -210,9 +210,9 @@ class _HomeState extends State<Home> {
                   ),
                   Container(
                     margin: const EdgeInsets.only(right: 20.0),
-                    padding: const EdgeInsets.all(3),
+                    padding: const EdgeInsets.all(5),
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: const Color(0xFF0EBA8E),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: InkWell(
@@ -271,7 +271,7 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                color: tools ? Colors.black : Colors.white,
+                color: tools ? const Color(0xFF0EBA8E) : Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: const EdgeInsets.all(8),
@@ -299,7 +299,7 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                color: seeds ? Colors.black : Colors.white,
+                color: seeds ? const Color(0xFF0EBA8E) : Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: const EdgeInsets.all(8),
@@ -327,7 +327,7 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                color: salad ? Colors.black : Colors.white,
+                color: salad ? const Color(0xFF0EBA8E) : Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: const EdgeInsets.all(8),
@@ -355,7 +355,7 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                color: burger ? Colors.lightGreen : Colors.white,
+                color: burger ? const Color(0xFF0EBA8E) : Colors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: const EdgeInsets.all(8),

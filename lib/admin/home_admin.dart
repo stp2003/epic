@@ -41,7 +41,7 @@ class _HomeAdminState extends State<HomeAdmin> {
                   child: Container(
                     padding: const EdgeInsets.all(4),
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: const Color(0xFF24997B),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Row(

@@ -29,7 +29,10 @@ class _AdminLoginState extends State<AdminLogin> {
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [Color.fromARGB(255, 53, 51, 51), Colors.black],
+                colors: [
+                  Color.fromARGB(255, 53, 51, 51),
+                  Color(0xFF0EBA8E),
+                ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -167,7 +170,7 @@ class _AdminLoginState extends State<AdminLogin> {
                                   const EdgeInsets.symmetric(horizontal: 20.0),
                               width: MediaQuery.of(context).size.width,
                               decoration: BoxDecoration(
-                                color: Colors.black,
+                                color: const Color(0xFF0EBA8E),
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: const Center(

@@ -75,8 +75,8 @@ class _LogInState extends State<LogIn> {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  Color(0xFFff5c30),
-                  Color(0xFFe74b1a),
+                  Color(0xFF0EBA8E),
+                  Color(0xFF109272),
                 ],
               ),
             ),
@@ -204,7 +204,7 @@ class _LogInState extends State<LogIn> {
                                       const EdgeInsets.symmetric(vertical: 8.0),
                                   width: 200,
                                   decoration: BoxDecoration(
-                                    color: const Color(0Xffff5722),
+                                    color: const Color(0xFF0EBA8E),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
                                   child: const Center(

@@ -109,7 +109,7 @@ class _OrderState extends State<Order> {
                                   style: AppWidget.semiBoldTextFieldStyle(),
                                 ),
                                 Text(
-                                  "\$" + ds["Total"],
+                                  "\₹" + ds["Total"],
                                   style: AppWidget.semiBoldTextFieldStyle(),
                                 ),
                               ],
@@ -121,7 +121,7 @@ class _OrderState extends State<Order> {
                   );
                 },
               )
-            : const CircularProgressIndicator();
+            : const Center(child: CircularProgressIndicator());
       },
     );
   }
@@ -163,7 +163,7 @@ class _OrderState extends State<Order> {
                     style: AppWidget.boldTextFieldStyle(),
                   ),
                   Text(
-                    "\$$total",
+                    "₹$total",
                     style: AppWidget.semiBoldTextFieldStyle(),
                   ),
                 ],
@@ -185,7 +185,7 @@ class _OrderState extends State<Order> {
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
-                  color: Colors.black,
+                  color: const Color(0xFF086F53),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 margin: const EdgeInsets.only(

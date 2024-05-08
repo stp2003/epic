@@ -101,7 +101,7 @@ class _OnboardState extends State<Onboard> {
             },
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.red,
+                color: const Color(0xFF0EBA8E),
                 borderRadius: BorderRadius.circular(20),
               ),
               height: 60,

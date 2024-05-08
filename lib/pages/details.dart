@@ -57,7 +57,7 @@ class _DetailsState extends State<Details> {
                 color: Colors.black,
               ),
             ),
-            const SizedBox(height: 10.0),
+            const SizedBox(height: 20.0),
             ClipRRect(
               borderRadius: BorderRadius.circular(30.0),
               child: Image.network(
@@ -90,7 +90,7 @@ class _DetailsState extends State<Details> {
                   },
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: const Color(0xFF0EBA8E),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: const Icon(
@@ -113,7 +113,7 @@ class _DetailsState extends State<Details> {
                   },
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: const Color(0xFF0EBA8E),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: const Icon(
@@ -163,7 +163,7 @@ class _DetailsState extends State<Details> {
                         style: AppWidget.semiBoldTextFieldStyle(),
                       ),
                       Text(
-                        "\$$total",
+                        "₹$total",
                         style: AppWidget.headlineTextFieldStyle(),
                       ),
                     ],
@@ -192,7 +192,7 @@ class _DetailsState extends State<Details> {
                       width: MediaQuery.of(context).size.width / 2,
                       padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: Colors.black,
+                        color: const Color(0xFF0EBA8E),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Row(
@@ -210,7 +210,7 @@ class _DetailsState extends State<Details> {
                           Container(
                             padding: const EdgeInsets.all(3),
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: Colors.black,
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: const Icon(

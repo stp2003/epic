@@ -83,7 +83,7 @@ class _ProfileState extends State<Profile> {
                       height: MediaQuery.of(context).size.height / 4.3,
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
-                        color: Colors.black,
+                        color: const Color(0xFF22AE88),
                         borderRadius: BorderRadius.vertical(
                           bottom: Radius.elliptical(
                             MediaQuery.of(context).size.width,

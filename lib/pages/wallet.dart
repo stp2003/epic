@@ -88,7 +88,7 @@ class _WalletState extends State<Wallet> {
                               height: 5.0,
                             ),
                             Text(
-                              "\$$wallet",
+                              "₹$wallet",
                               style: AppWidget.boldTextFieldStyle(),
                             ),
                           ],
@@ -121,7 +121,7 @@ class _WalletState extends State<Wallet> {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: Text(
-                            "\$" "100",
+                            "₹" "100",
                             style: AppWidget.semiBoldTextFieldStyle(),
                           ),
                         ),
@@ -139,7 +139,7 @@ class _WalletState extends State<Wallet> {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: Text(
-                            "\$" "500",
+                            "₹" "500",
                             style: AppWidget.semiBoldTextFieldStyle(),
                           ),
                         ),
@@ -157,7 +157,7 @@ class _WalletState extends State<Wallet> {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: Text(
-                            "\$" "1000",
+                            "₹" "1000",
                             style: AppWidget.semiBoldTextFieldStyle(),
                           ),
                         ),
@@ -175,7 +175,7 @@ class _WalletState extends State<Wallet> {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: Text(
-                            "\$" "2000",
+                            "₹" "2000",
                             style: AppWidget.semiBoldTextFieldStyle(),
                           ),
                         ),
